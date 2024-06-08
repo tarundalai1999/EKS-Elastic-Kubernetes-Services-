@@ -38,6 +38,7 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 sudo apt install unzip
 unzip awscliv2.zip
 sudo ./aws/install
+aws configure
 ```
 
 ## KUBECTL
@@ -57,18 +58,13 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 ```
 
-# After All Above Setup
-
-```bash
-aws configure
-```
-
 ## Create EKS CLUSTER
 
 ```bash
 eksctl create cluster --name=my-eks22 \
                       --region=ap-south-1 \
                       --zones=ap-south-1a,ap-south-1b \
+                      --version=1.30 \
                       --without-nodegroup
 
 eksctl utils associate-iam-oidc-provider \
