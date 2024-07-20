@@ -38,7 +38,6 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 sudo apt install unzip
 unzip awscliv2.zip
 sudo ./aws/install
-aws configure
 ```
 
 ## KUBECTL
@@ -57,6 +56,10 @@ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/d
 sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 ```
+#AT LAST
+'''bash
+aws configure
+'''
 
 ## Create EKS CLUSTER
 
