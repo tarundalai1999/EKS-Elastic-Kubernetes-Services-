@@ -57,9 +57,9 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 ```
 #AT LAST
-'''bash
+```bash
 aws configure
-'''
+```
 
 ## Create EKS CLUSTER
 
